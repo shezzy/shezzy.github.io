@@ -358,7 +358,141 @@
         
         <!-- portfolio items start -->
         <div class="isotope-container row grid-space-20">
-          <div class="col-sm-6 col-md-3 isotope-item app-design">
+          <div class="col-sm-6 col-md-3 isotope-item web-design">
+            <div class="image-box">
+              <div class="overlay-container"> <img src="images/Syncsort-Thumb-1.png" alt=""> <a class="overlay" data-toggle="modal" data-target="#project-1109"> <i class="fa fa-search-plus"></i> <span>Web Design</span> </a> </div>
+              <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1109">VSP Portal</a> </div>
+            <!-- Modal -->
+            <div class="modal fade" id="project-1109" tabindex="-1" role="dialog" aria-labelledby="project-1109-label" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="project-1109-label">VSP Portal - Host Servers</h4>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <h3>Project Description</h3>
+                    <div class="row">
+                      <div class="col-md-12 text-justify">
+                        <p>The existing 'Verify' button that is available for a portal connection only does the equivalent of a TCP/IP 'ping' to the value (either a host name or IP address) identified in the Host field of the portal connection. Customers would also like the ability (for IBM i types of portal connections) to see if the portal connection is used to connect to a product instance in VSP, that the IBM i host sever jobs are accessible and running.</p>
+                      </div>
+                    </div>
+					<h3>UX Goal/Motivation</h3>
+                    <div class="row">
+                      <div class="col-md-12 text-justify">
+                        <p>What is motivating us to make this change?<br>
+						To provide an interface in VSP to validate IBM i portal connections, instead of relying only on ping for IBM i system availability.</p>
+                      </div>
+                    </div>
+					<h3>Persona</h3>
+                    <div class="row">
+                      <div class="col-md-6 text-center">
+                        
+                        <img class="center-block" src="images/Persona-Tom.png" alt="" border="1px"> 
+                      </div>
+                        <div class="col-md-5 text-justify">
+							<strong>Background</strong><p>Tom is 31 year old recently married IT Administrator for the Haley Corporation. He has a degree in computer operations management and would like to be an IT Director or CIO some day. Tom likes to spend his free time deep sea fishing and taking his beautiful bride on picnics and bike rides.</p>
+                     		<strong>Goals</strong> <ul><li>Adding the system to VSP and verify that the required host servers are available.</li></ul>
+                       		<strong>Tasks</strong> <ul><li>Add a portal connection.Validate that the host servers are available.</li><li>Determine why any of the required host servers are not available.</li><li>Resolve IBM i specific issues related to host servers, TCP/IP services and configuration.</li><li>Engage network specialist as needed to resolve any firewall-related issues.</li></ul>
+                       	
+                       	</div>
+                    </div>
+                    <br>
+					<div class="row">
+                      <div class="col-md-6 text-center">
+                        
+                        <img class="center-block" src="images/Persona-Felipe.png" alt="" border="1px"> 
+                      </div>
+                        <div class="col-md-5 text-justify">
+							<strong>Background</strong><p>Felipe is 45 years old and married with three teenage children. After graduating from college he started working with IBM i and gradually started working with Windows. He has worked for a Vision business partner for the last 10 years. He enjoys traveling with his family and several outdoor activities, such as hang gliding and white-water rafting.</p>
+							
+                     		<strong>Goals</strong> <ul><li>To ensure that VSP is working.</li></ul>
+                       		<strong>Tasks</strong> <ul><li>Delegates the implementation of new portal connections to Curt.</li></ul>
+                       	
+                       	</div>
+                    </div>
+                    <br>
+										<div class="row">
+<div class="col-md-6 text-center">
+                        
+                        <img class="center-block" src="images/Persona-Curt.png" alt="" border="1px"> 
+                      </div>
+                        <div class="col-md-5 text-justify">
+							<strong>Background</strong><p>Curt is married and has one child in grade school and another in high school. His children are active in sports (football and basketball), music, and academics. This keeps him keeps him busy attending events and practices, and why he has a minivan to haul his kids, friends, and equipment. Curt has a bachelors degree in Information Technology from the University of Phoenix.</p>
+							<strong>Goals</strong> <ul><li>Make sure that the required host servers are operational for the portal connection in use.</li></ul>
+                       		<strong>Tasks</strong> <ul><li>Add a portal connection. Validate that the host servers are available.</li><li>Troubleshoot and resolve any host server availability</li>
+issues.</li></ul>
+                       	</div>
+                    </div>
+                    <br>
+<div class="row">
+                      <div class="col-md-6 text-center">
+                        
+                        <img class="center-block" src="images/Persona-Lucy.png" alt="" border="1px"> 
+                      </div>
+                        <div class="col-md-5 text-justify">
+							<strong>Background</strong><p>Lucy is a bi-lingual customer support representative for Syncsort. She is in her late twenties and single. She grew up in an Hispanic household and has a two year degree in Computer Information Systems. On the weekends she likes to hang out with her friends at dance clubs. She is also a gym rat.</p>
+							
+                     		<strong>Goals</strong> <ul><li>To deal with any questions related to portal connections.</li></ul>
+                       		<strong>Tasks</strong> <ul><li>Step-by-step explanation of managing portal connections.</li></ul>
+                       	
+                       	</div>
+                    </div>
+                    <br>
+                    <h3>Summary of Work</h3>
+                    <div class="row">
+					  <div class="col-md-12 text-justify"><p>Design a new dialog which will gather the data and display host server status. Implement and test the UI design, and validation code. Ensure that the unit test are in place for all new and changed code when appropriate.
+A new row action for an IBM i type of portal connection will be added that will display a new dialog that can be used to display which IBM i Host Server jobs are accessible and running (since an actual connection will be made to that IBM i host, the user id/profile and password from the portal connection will be used). Also, since it's at the discretion of the portal application as to which IBM i Host Servers are utilized for any given Syncsort product and this is a VSP-centric dialog (i.e. it is not known which Syncsort products may/will use this portal connection), the user will be provided a list of IBM i Host Server jobs based on portlets installed.</p></div>
+                      </div>
+					<h3>Initial Design</h3>
+                    <div class="row">
+                    <div class="col-md-12">It was important to identify which host servers are valid for the VSP users. The easiest way to identify them was to list down all possible host servers and then work with the devs and core team to strike out the ones those are not valid for VSP.
+					</div>
+					<p>&nbsp;</p>
+					<div class="col-md-6"> 
+					<img src="images/HostServer-A.png" alt=""> <br>
+					</div>
+					
+                    <div class="col-md-6"> <img src="images/HostServer-B.png" alt=""> <br></div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-12"> <img src="images/HostServer-C.png" alt=""> <br>
+					</div>
+					</div>
+                    <h3>High Fidelity Prototype</h3>
+                    <p>When one or more host servers is not working:</p>
+                    <div class="col-md-12"> <img src="images/HostServer-0.png" alt=""> <br>
+					</div>
+					
+					<p>When all the host servers are working:</p>
+                    <div class="col-md-12"> <img src="images/HostServer-1.png" alt=""> <br></div>
+                    
+                    <strong>In Progress:</strong>
+					<p>This version of the dialog is displayed when VSP is gather information about the host servers and returning the statuses.
+                    <div class="col-md-12"> <img src="images/HostServer-2.png" alt=""> <br></div>
+                    <h3>Working Design</h3>
+                    <div class="col-md-12"> <img src="images/HostServerGIF.gif" alt=""> <br></div>
+                    <h3>Learnings and Challenges</h3>
+                      <div class="col-md-12 text-justify">
+                        <ul>
+							<li>Identifying which IBM i host servers are applicable for the VSP users.</li>
+							<li>Ensuring that the flyover text and statuses provide accurate real-time information.</li>
+						</ul>
+                      
+                   </div>				
+ 				</div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal end --> 
+          </div>
+		  
+		  <div class="col-sm-6 col-md-3 isotope-item app-design">
             <div class="image-box">
               <div class="overlay-container"> <img src="images/Videology/New folder/v2/Videology_Thumb.jpg" alt=""> <a class="overlay" data-toggle="modal" data-target="#project-110"> <i class="fa fa-search-plus"></i> <span>App Design</span> </a> </div>
               <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-110">Search By Module</a> </div>
@@ -396,24 +530,24 @@
                       <div class="col-md-12 text-justify"> <img class="center-block" width="50%" height="50%" src="images/Videology/New folder/v2/Videology_ColorPalette_v2.png" alt=""> </div>
                     </div>
                     <h3>High Fidelity Prototype</h3>
-                    <div> <strong>Module 1 â€“ Search by country</strong>
+                    <div> <strong>Module 1 – Search by country</strong>
                       <p>In this view the client would select a country, which would populate specific regions within that country.</p>
                     </div>
                     <div class="col-md-6"> <img src="images/Videology/New folder/v2/Videology_++++_v2.png" alt=""> </div>
                     <div class="col-md-6"> <img src="images/Videology/New folder/v2/Videology_ByCountry_v2.png" alt=""> </div>
-                    <div> <strong>Module 2 â€“ Saved search list</strong>
+                    <div> <strong>Module 2 – Saved search list</strong>
                       <p>The client would be presented with a list of saved files that contain zip codes that have previously been created. When they select a file to target, they would see what zip codes are in that list. They have the ability to select multiple files.</p>
                     </div>
                     <div class="col-md-6"> <img src="images/Videology/New folder/v2/Videology_EnterZipcode_v2_default.png" alt=""> </div>
                     <div class="col-md-6"> <img src="images/Videology/New folder/v2/Videology_EnterZipcode_v2.png" alt=""> </div>
                     <div>&nbsp;</div>
-                    <div> <strong>Module 3 â€“ Enter zipcode</strong>
+                    <div> <strong>Module 3 – Enter zipcode</strong>
                       <p>In this view the user would just want a space to enter in zip codes manually that they want to target.</p>
                     </div>
                     <div class="col-md-6"> <img src="images/Videology/New folder/v2/Videology_SavedSearch_v2_default.png" alt=""> </div>
                     <div class="col-md-6"> <img src="images/Videology/New folder/v2/Videology_SavedSearch_v2.png" alt=""> <br>
                     </div>
-                    <div> <strong>Module 4 â€“ Upload .csv file</strong>
+                    <div> <strong>Module 4 – Upload .csv file</strong>
                       <p>In this view, or option, the client just wants to upload a .csv file with zip codes in it.</p>
                     </div>
                     <div class="col-md-6"> <img src="images/Videology/New folder/v2/Videology_UploadCSV_v2_default.png" alt=""> </div>
@@ -626,7 +760,7 @@
             <ul>
             <li>Understood iOS and Android design guidelines.</li>
             <li>Importance of whitespace and font-size for smaller devices.</li>
-            <li>Feedback is important. However, it is not always necessary to incorporate all of them.</li>
+            <li>Feedbacask is important. However, it is not always necessary to incorporate all of them.</li>
             </ul>
                       <h3>What Next?</h3>
             <ul>
@@ -660,8 +794,8 @@
                     <h3>Project Description</h3>
                     <div class="row">
                       <div class="col-md-6 text-justify">
-                        <p>On a relaxed Sunday afternoon, while browsing the internet, I bumped into Disneyâ€™s website. My first thought after looking at Disneyâ€™s website was that why does it contains so many large images and texts on a homepage?</p>
-                        <p>One would think that this website is specifically designed for kids. However, in my opinion, Disney needs to broaden its demographic range. Even though their largest age group range is among kids, realistically users of all ages browse through Disneyâ€™s website for some or the other reason. Be it shopping a Disney product or finding information about a Disney movie or planning a trip to Disneyland.</p>
+                        <p>On a relaxed Sunday afternoon, while browsing the internet, I bumped into Disney’s website. My first thought after looking at Disney’s website was that why does it contains so many large images and texts on a homepage?</p>
+                        <p>One would think that this website is specifically designed for kids. However, in my opinion, Disney needs to broaden its demographic range. Even though their largest age group range is among kids, realistically users of all ages browse through Disney’s website for some or the other reason. Be it shopping a Disney product or finding information about a Disney movie or planning a trip to Disneyland.</p>
                         <p>After browsing through the website, I decided to do a quick heuristic evaluation.</p>
                       </div>
                       <div class="col-md-6"> <img src="images/disney-1.jpg" alt=""> </div>
@@ -680,13 +814,13 @@
                       <br>
                       <h4>Context and layout:</h4>
                       <p>The images used on the websites are very inconsistent in terms of styling and alignment. For example, some images sharp corners while others have rounded corners. Some of images used on the website seem to be of low quality and pixelated.</p>
-                      <p>Also, due to the high amount of images and videos on the homepage, it takes a long time to load. Another issue with the home page is that the layout doesnâ€™t help the user to focus their attention on what to do next.</p>
+                      <p>Also, due to the high amount of images and videos on the homepage, it takes a long time to load. Another issue with the home page is that the layout doesn’t help the user to focus their attention on what to do next.</p>
                       <img src="images/heuristic-3.jpg" alt=""> <br>
                       <h4>Lack of interaction:</h4>
                       <p>While hovering the cursor over those large images and menus, you expect some type of animation, change of text color or at least some useful information to be displayed. This helps the user understand that those images are dynamic and clickable. This type of interaction is missing and makes the users feel that those are just static images. Items that aren't clickable do not have characteristics they should possess. Thus, lowering the click rate.</p>
                       <br>
                       <h4>Mixed scrolling:</h4>
-                      <p>As you scroll through the Disneyâ€™s homepage, you will find a lot of images and information cluttered in one page. There is high amount of vertical and horizontal scrolling which would distract the user from their original goal as it consists data about the submenus. For a user with poor spatial visualization skill, this type of scrolling might be challenging. Using horizontal scrolling on non-touch devices might be painful for the users.</p>
+                      <p>As you scroll through the Disney’s homepage, you will find a lot of images and information cluttered in one page. There is high amount of vertical and horizontal scrolling which would distract the user from their original goal as it consists data about the submenus. For a user with poor spatial visualization skill, this type of scrolling might be challenging. Using horizontal scrolling on non-touch devices might be painful for the users.</p>
                       <img src="images/heuristic-4.jpg" alt=""> <br>
                       <h4>Zooming of the widgets:</h4>
                       <p>I tried to zoom out to 30% of the orignal size and found out that not all the widgets of the webpage change their sizes. Some of the widgets such as the main slider and featured videos remain at the original size.</p>
@@ -999,13 +1133,13 @@
 <div class="col-sm-12">
   <div class="footer-content">
     <div class="space"></div>
-    <p class="text-center">I am currently looking for full-time job opportunities in UX/UI or Product Design field.</p>
+    <p class="text-center">I am currently looking for full-time job opportunities in UX field.</p>
     <p class="text-center"> <i class="fa fa-phone pr-10"></i>443-453-8043 | <i class="fa fa-envelope-o pr-10"></i>shettya1@umbc.edu </p>
     <ul class="social-links text-center">
       <li class="facebook"><a target="_blank" href="https://www.facebook.com/awesomyth"><i class="fa fa-facebook"></i></a></li>
       <li class="twitter"><a target="_blank" href="https://twitter.com/awesomyth"><i class="fa fa-twitter"></i></a></li>
       <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/amitshetty1"><i class="fa fa-linkedin"></i></a></li>
-      <li class="instagram"><a target="_blank" href="https://www.instagram.com/amyth09"><i class="fa fa-instagram"></i></a></li>
+      <li class="instagram"><a target="_blank" href="https://www.instagram.com/awesomyth"><i class="fa fa-instagram"></i></a></li>
     </ul>
   </div>
 </div>
@@ -1017,7 +1151,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <p class="text-center">Copyright Â© <a class="scrollspy smooth-scroll" href="#about">Amit Shetty</a>.</p>
+        <p class="text-center">Copyright © <a class="scrollspy smooth-scroll" href="#about">Amit Shetty</a>.</p>
       </div>
     </div>
   </div>
