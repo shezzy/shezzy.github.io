@@ -144,7 +144,7 @@
 <div class="col-md-6">
   <p class="text-justify">I am a designer trying to juggle life between technology, design, and empathy. I enjoy building interactive and creative experiences to simplify usability. User research, problem-solving, and taking ownership of a task are my strengths.</p>
   <p class="text-justify">Over the past 8 years, my education and career path has allowed me to absorb many disciplines. These include graphic design, interface testing, tech writing, user research, mobile design, and user experience.</p>
-  <p class="text-justify">Currently my role, as a UX Designer, involves working closely with a variety of stakeholders to creating experiences that improve usability. Through user research, prototyping, and conducting user testing these experiences solve problems while at the same time are user friendly.</p>
+  <p class="text-justify">Currently my role, as a UX Designer, involves working closely with a variety of stakeholders to creating experiences that improves usability. Through user research, prototyping, feedbacks, and iterating designs, I am always trying to simplify user tasks.</p>
 </div>
 <div class="col-md-6">
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -382,15 +382,27 @@
  <h3>Product Descrtiption</h3>
                     <div class="row">
                       <div class="col-md-12 text-justify">
-                        <p>Syncsort's MIMIX Availability delivers high availability and disaster recovery for IBM i servers, regardless of location, to eliminate downtime and data loss across your business.
+                        <p>Syncsort's VSP is a GUI portal which delivers high availability and disaster recovery for IBM i servers, regardless of location, to eliminate downtime and data loss across the business.
 </p>
                       </div>
                     </div>
 
-<h3>Project Description</h3>
+<h3>Problem Statement</h3>
                     <div class="row">
                       <div class="col-md-12 text-justify">
                         <p>The existing 'Verify' button that is available for a portal connection only does the equivalent of a TCP/IP 'ping' to the value (either a host name or IP address) identified in the Host field of the portal connection. Customers would also like the ability (for IBM i types of portal connections) to see if the portal connection is used to connect to a product instance in VSP, that the IBM i host sever jobs are accessible and running.</p>
+                      	
+
+                      </div>
+                    </div>
+<h3>Role</h3>
+                    <div class="row">
+                      <div class="col-md-12 text-justify">
+                        <p>My role as a UX Designer was to:<ul><li>Conduct a kickoff meeting with the stakeholders <i>(product managers, engineers, QA, tech writers, UX, sales, support)</i>.</li><li>Collaborate with UI Engineers and IBM i Core teams to understand the technical feasibility of this feature.</li><li>Write high-level design and lead the design process.</li><li>Design, feedback, iterate, repeat.</li><li>Document the design on Confluence.</li><li>Conduct UX review meeting and resolve issues raised during the meeting.</li><li>Perform usability testing.</li></ul>
+
+                        </p>
+                      	
+
                       </div>
                     </div>
 					<h3>UX Goal/Motivation</h3>
@@ -402,6 +414,8 @@
                     </div>
 					<h3>Persona</h3>
                     <div class="row">
+                      <div class="col-md-12 text-justify"><p>Based on the kickoff meeting with various stakeholders, I idenified the following personas:</p></div>
+                    	
                       <div class="col-md-5 text-center">
                         
                         <img class="center-block" src="images/Persona-Tom.png" alt="" border="1px"> 
@@ -467,42 +481,56 @@ issues.</li></ul>
                     <div class="col-md-12">It was important to identify which host servers are valid for the VSP users. The easiest way to identify them was to list down all possible host servers and then work with the devs and core team to strike out the ones those are not valid for VSP.
 					</div>
 					<p>&nbsp;</p>
-					<div class="col-md-6"> 
+					<div class="col-md-4"> 
 					<img src="images/HostServer-A.png" alt=""> <br>
 					</div>
-					
-                    <div class="col-md-6"> <img src="images/HostServer-B.png" alt=""> <br></div>
+					                    <div class="col-md-4"> <img src="images/HostServer-B.png" alt=""> <br></div>
+
+                    <div class="col-md-4"> <img src="images/HostServer-C.png" alt=""> <br></div>
                     </div>
                     <div class="row">
-                                        <div class="col-md-6"> <ul><li>Identifying the host servers and their possible statuses.</li><li>Flyover text for each host server.</li><li>Information text on how to resolve the issue (if any).</li></ul></div>
-                    <div class="col-md-6"> <img src="images/HostServer-C.png" alt=""> <br>
-					</div>
+                                        <div class="col-md-12"> <ul><li>Identifying the host servers and their possible statuses.</li><li>Flyover text for each host server.</li><li>Information text on how to resolve the issue (if any).</li></ul></div>
+
 					</div>
                     <h3>High Fidelity Prototype</h3>
-                    <p>When one or more host servers is not working:</p>
+                                        <strong>Host Server Details Dialog</strong>
+<p>This version of the dialog is displayed when one or more host servers is not working:</p>
                     <div class="col-md-12"> <img src="images/HostServer-0.png" alt=""> <br>
 					</div>
 					
-					<p>When all the host servers are working:</p>
+					<p>This version of the dialog is displayed when all the host servers are working:</p>
                     <div class="col-md-12"> <img src="images/HostServer-1.png" alt=""> <br></div>
                     
-                    <strong>In Progress:</strong>
-					<p>This version of the dialog is displayed when VSP is gather information about the host servers and returning the statuses.
+                    <strong>In Progress</strong>
+					<p>This version of the dialog is displayed when VSP is gathering information about the host servers and returning the statuses.
                     <div class="col-md-12"> <img src="images/HostServer-2.png" alt=""> <br></div>
                     <h3>Design Documentation</h3>
                     <div class="col-md-12"> <img src="images/HostServerDoc.png" alt="Design-Doc-Image"> <br></div>
 
                     <h3>Working Design</h3>
                     <div class="col-md-12"> <img src="images/HostServerGIF.gif" alt=""> <br></div>
+
                     <h3>Learnings and Challenges</h3>
+                    <div class="row">
                       <div class="col-md-12 text-justify">
                         <ul>
-							<li>Identifying which IBM i host servers are applicable for the VSP users.</li>
+							<li>Identifying which IBM i host servers are applicable for the VSP users was key.</li>
 							<li>Ensuring that the flyover text and statuses provide accurate real-time information.</li>
 						</ul>
-                      
+                   </div>	
+                </div>
+                   <h3>Client Feedback</h3>
+                                          <div class="row">
+<div class="col-md-12 text-justify">
+                        <p>I conducted usability test with a couple of our clients who requested for this feature. These were their responses:</p>
+                        <ul>
+							<li><i>"This is exactly what we were looking for."</i></li>
+							<li><i>"We no longer need to switch between the GUI and command-line interface to get information about host servers."</i></li>
+						</ul>
+    					</div>
                    </div>				
  				</div>
+ 				
 
                   <div class="modal-footer">
                     <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
